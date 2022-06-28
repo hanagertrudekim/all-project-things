@@ -1,16 +1,20 @@
-import "./App.css";
-import CoffeeList from "./CoffeeList";
-import CoffeeCup from "./CoffeeCup";
-import { useState } from "react";
+import { Route, Routes, Link } from "react-router-dom";
+import CoffeeApp from "./coffee.app/CoffeeApp";
 
-function App() {
-  const [coffee, setCoffee] = useState(0);
+const App = () => {
   return (
-    <div className="container">
-      <CoffeeCup coffee={coffee} />
-      <CoffeeList setCoffee={setCoffee} coffee={coffee} />
+    <div className="App">
+      <h1>MY Projects</h1>
+      <h2>
+        <li>
+          <Link to="/coffee">Coffee APP</Link>
+        </li>
+      </h2>
+      <Routes>
+        <Route path="/coffee" element={<CoffeeApp />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;

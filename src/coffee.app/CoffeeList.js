@@ -1,4 +1,4 @@
-import small_coffee from "./assets/small_coffee.webp.crdownload";
+import small_coffee from "./assets/small_coffee.webp";
 import medium_coffee from "./assets/medium_coffee.jpg";
 import large_coffee from "./assets/large_coffee.png";
 
